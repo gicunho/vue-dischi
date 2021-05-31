@@ -1,0 +1,48 @@
+/* Common Classes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg_grey {
+    background-color: #2e3a46;
+}
+.bg_darkblue {
+    background-color: #1e2d3b;
+}
+
+
+
+/* Header */
+header img{
+    padding: 20px 0;
+    margin-left: 150px;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.album {
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+.album img {
+    width: 100%;
+}
+.album h2 {
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+.album h3 {
+    color: grey;
+}

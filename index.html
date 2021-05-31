@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Spotify</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- My Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  </head>
+  <body class="bg_darkblue">
+      <div id="root">
+          <header class="bg_grey">
+            <!-- Site Header -->
+            <img width="80" src="./assets/img/logo.png" alt="logo Spotify" class="p-2">
+            <!-- /Site Header -->
+          </header>
+          
+          <main class="d-flex">
+            <!-- Site Main Content -->
+            <div class="album bg_grey p-2 m-3" v-for='album in albums'>
+                <img :src="album.poster" alt="">
+                <h2>{{album.title}}</h2>
+                <h3>{{album.author}}</h3>
+                <h3>{{album.year}}</h3>
+            </div>
+            <!-- /Site Main Content -->
+          </main>
+
+      </div>
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
